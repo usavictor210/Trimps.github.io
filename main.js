@@ -9947,6 +9947,7 @@ function startFight() {
 				if (game.empowerments.Ice.getLevel() >= 100) overkillerCount++;
 			}
 			if (getUberEmpowerment() == "Ice") overkillerCount += 2;
+			overkillerCount += 100; //testing unrestricted overkill
 			if (cell.OKcount <= overkillerCount){
 				var nextCell = (game.global.mapsActive) ? game.global.mapGridArray[cellNum + 1] : game.global.gridArray[cellNum + 1];
 				if (nextCell){
